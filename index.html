@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arnav's Pizzeria Menu</title>
+        <meta name="veiwport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <section>
+            <h2>Menu</h2>
+            <p>Here is our menu:</p>
+            <ol>
+                <li>Cheese Pizza</li>
+                <li>Chicken Pizza</li>
+                <li>Pepperoni Pizza</li>
+                <li>Vegetable Pizza</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Requested Menu Items</h2>
+            <p>Here are our requested menu items:</p>
+            <p class="no_requested_menu_items_message">There are currently no requested menu items.</p>
+            <ol class="requested_menu_items"></ol>
+            <input type="button" value="Request New Item" onclick="requestedMenuItemsManager.addNewItem();">
+        </section>
+        <div class="script">
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>
